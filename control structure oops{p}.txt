@@ -1,0 +1,58 @@
+control structures
+
+package myproject;
+import java.util.*;
+public class scannerexamples {
+      public static void main(String args[]) {
+         int a = 10, b = 3;
+         System.out.println("Addition: " + (a + b));      
+         System.out.println("Subtraction: " + (a - b));   
+         System.out.println("Multiplication: " + (a * b)); 
+         System.out.println("Division: " + (a / b));       
+   System.out.println("Modulus: " + (a % b));        
+      }
+  }
+  
+package myproject;
+import java.util.*;
+public class forloop {
+      public static void main(String args[]) {
+         int i;
+    for(i=0;i<5;i++)
+    {
+    System.out.println("hello");
+    }      
+      }
+  }
+
+
+   
+package myproject;
+import java.util.*;
+public class whileloop {
+      public static void main(String args[]) {
+         {
+  int x=2;
+  while(x<=5)
+  {
+  System.out.println("hello");
+  x++;
+  }     
+      }
+  }
+
+
+
+package myproject;
+import java.util.*;
+public class ifelse {
+      public static void main(String args[]) {
+         {
+  int num = 7;
+  if (num%2==0) {
+     System.out.println("Even number");
+   } else {
+      System.out.println("Odd number");
+   }
+      }
+  }

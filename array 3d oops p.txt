@@ -1,0 +1,44 @@
+package myproject;
+public class array3d {
+    public static void main(String[] args) {
+        int[][][] A = {
+            { {1, 2}, {3, 4} },
+            { {5, 6}, {7, 8} }
+        };
+
+        int[][][] B = {
+            { {9, 10}, {11, 12} },
+            { {13, 14}, {15, 16} }
+        };
+
+        int x = A.length; 
+        int m = A[0].length;
+        int n = A[0][0].length;
+        int p = B[0][0].length;
+
+        int[][][] result = new int[x][m][p];
+
+                for (int i = 0; i < x; i++) {
+            for (int j = 0; j < m; j++) {
+                for (int k = 0; k < p; k++) {
+                    for (int l = 0; l < n; l++) {
+                        result[i][j][k] += A[i][j][l] * B[i][l][k];
+                    }
+                }
+            }
+        }
+
+        
+        System.out.println("3D Matrix Multiplication Result:");
+        for (int i = 0; i < x; i++) {
+            System.out.println("Layer " + (i+1) + ":");
+            for (int j = 0; j < m; j++) {
+                for (int k = 0; k < p; k++) {
+                    System.out.print(result[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
