@@ -1,0 +1,43 @@
+package myproject;
+
+public class stringex {
+public static void main(String args[]) {
+	String str="hello this is java class";
+	String str1="hello";
+	String str2="heLLo";
+	String str3="hi how are you";
+	String str4="hello";
+	String str5="1234";
+	String str6="Java1234";
+	String str7="";
+	String str8="  hello  java   ";
+	System.out.println(str1.length());
+	System.out.println(str.toUpperCase());
+	System.out.println(str2.toLowerCase());
+	System.out.println(str.charAt(9));
+	System.out.println(str1.compareTo(str2));
+	System.out.println(str.compareToIgnoreCase(str2));
+	System.out.println(str1.concat(str4));
+	System.out.println(str.contains("ell"));
+	System.out.println(str.contentEquals(str1));
+	System.out.println(str1.endsWith("ho"));
+	System.out.println(str.equals(str3));
+	System.out.println(str.indexOf("l"));
+	System.out.println(str5.matches("[0-9]+"));
+	System.out.println(str7.isEmpty());
+	System.out.println(String.join("|",str2,str3,str4));
+	System.out.println(str.lastIndexOf('l'));
+	System.out.println(str.replace('l','p'));
+	System.out.println(str.replaceFirst("hel","tro"));
+	String str9[]=str3.split(" ");
+	for (String i:str9) {  
+		System.out.println(i);
+	}
+	System.out.println(str6.startsWith("3"));
+	System.out.println(str.subSequence(5,12));
+	char arr[]=str4.toCharArray();
+	System.out.println(arr[0]);
+	System.out.println(str8.trim());
+	
+}
+}
